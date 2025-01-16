@@ -1,0 +1,95 @@
+/* General Reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar Styles */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    z-index: 1000;
+}
+
+/* Layout Container */
+.container {
+    display: flex;
+    margin-top: 50px; /* Space for the navbar */
+    height: calc(100vh - 100px); /* Adjust for navbar and footer */
+}
+
+/* Left Menu */
+.left-menu {
+    flex: 1;
+    background-color: #f4f4f4;
+    max-width: 200px;
+    transition: max-width 0.3s ease, padding 0.3s ease;
+    overflow: hidden;
+    position: relative;
+    padding-top: 50px; /* Push menu items down to avoid overlap with toggle button */
+}
+
+.left-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.left-menu ul li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Toggle Button */
+#toggle-button {
+    position: fixed;
+    top: 60px; /* Just below the navbar */
+    left: 10px; /* Always outside the menu */
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    z-index: 1000; /* Ensure it stays above other elements */
+    transition: all 0.3s ease;
+}
+
+#toggle-button:hover {
+    background-color: #555;
+}
+
+.left-menu.collapsed {
+    max-width: 0;
+    padding: 0;
+}
+
+.main-content {
+    flex: 3;
+    background-color: #eaeaea;
+    padding: 20px;
+    transition: margin-left 0.3s ease;
+}
+
+/* Right Panel */
+.right-panel {
+    flex: 1;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+/* Footer */
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}

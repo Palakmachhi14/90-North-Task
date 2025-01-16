@@ -1,6 +1,6 @@
 # 90-North-Task
 
-**Responsive Webpage with Collapsible Left Menu**
+**1. Responsive Webpage with Collapsible Left Menu**
 This project implements a responsive webpage with a fixed navbar, a collapsible left menu, a main content area, a right-side panel, and a footer. The webpage adjusts its layout and scaling based on screen width, ensuring a smooth user experience across devices.
 
 -Features
